@@ -2,11 +2,14 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Trip;
 
 class Car extends Model
 {
+    use HasFactory;
+
     public $timestamps = false;
     protected $fillable = [
         'make',
